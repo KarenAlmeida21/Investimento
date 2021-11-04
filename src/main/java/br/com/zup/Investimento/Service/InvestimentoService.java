@@ -10,9 +10,16 @@ import java.util.List;
 @Service
 public class InvestimentoService {
     private List<InvestimentoDto> investimentoDtoList = new ArrayList<>();
+
     public void cadastrarInvestimento(InvestimentoDto investimento) {
         investimentoDtoList.add(investimento);
     }
+
+    public List<InvestimentoDto>exibirInvestimento(){
+        return investimentoDtoList;
+    }
+
 }
+
 
 
