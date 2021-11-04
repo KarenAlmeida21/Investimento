@@ -4,6 +4,7 @@ public enum Risco {
     BAIXO(0.0005),
     MEDIO(0.0015),
     ALTO(0.0025);
+
     private double taxaDeRetorno;
 
     Risco(double taxaDeRetorno) {
@@ -13,4 +14,5 @@ public enum Risco {
     public double getTaxaDeRetorno() {
         return taxaDeRetorno;
     }
+
 }
