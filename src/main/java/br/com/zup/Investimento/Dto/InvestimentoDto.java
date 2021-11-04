@@ -8,16 +8,26 @@ public class InvestimentoDto {
     private String nome;
     private double valorInvestido;
     private Risco taxaDeRetorno;
+    private int periodoAplicacao;
 
     public InvestimentoDto() {
     }
 
-    public InvestimentoDto(String email, String cpf, String nome, double valorInvestido, Risco taxaDeRetorno) {
+    public InvestimentoDto(String email, String cpf, String nome, double valorInvestido, Risco taxaDeRetorno, int periodoAplicacao) {
         this.email = email;
         this.cpf = cpf;
         this.nome = nome;
         this.valorInvestido = valorInvestido;
         this.taxaDeRetorno = taxaDeRetorno;
+        this.periodoAplicacao = periodoAplicacao;
+    }
+
+    public int getPeriodoAplicacao() {
+        return periodoAplicacao;
+    }
+
+    public void setPeriodoAplicacao(int periodoAplicacao) {
+        this.periodoAplicacao = periodoAplicacao;
     }
 
     public String getEmail() {

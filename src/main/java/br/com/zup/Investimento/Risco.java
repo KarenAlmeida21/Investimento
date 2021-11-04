@@ -9,4 +9,8 @@ public enum Risco {
     Risco(double taxaDeRetorno) {
         this.taxaDeRetorno = taxaDeRetorno;
     }
+
+    public double getTaxaDeRetorno() {
+        return taxaDeRetorno;
+    }
 }
