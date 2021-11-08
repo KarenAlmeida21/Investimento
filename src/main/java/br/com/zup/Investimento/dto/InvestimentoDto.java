@@ -1,4 +1,4 @@
-package br.com.zup.Investimento.Dto;
+package br.com.zup.Investimento.dto;
 
 import br.com.zup.Investimento.Risco;
 
@@ -6,7 +6,7 @@ public class InvestimentoDto {
     private String email;
     private String cpf;
     private String nome;
-    private double valorInvestido;
+    private double valorInvestimento;
     private Risco taxaDeRetorno;
     private int periodoAplicacao;
 
@@ -17,7 +17,7 @@ public class InvestimentoDto {
         this.email = email;
         this.cpf = cpf;
         this.nome = nome;
-        this.valorInvestido = valorInvestido;
+        this.valorInvestimento = valorInvestido;
         this.taxaDeRetorno = taxaDeRetorno;
         this.periodoAplicacao = periodoAplicacao;
     }
@@ -54,12 +54,12 @@ public class InvestimentoDto {
         this.nome = nome;
     }
 
-    public double getValorInvestido() {
-        return valorInvestido;
+    public double getValorInvestimento() {
+        return valorInvestimento;
     }
 
-    public void setValorInvestido(double valorInvestido) {
-        this.valorInvestido = valorInvestido;
+    public void setValorInvestimento(double valorInvestimento) {
+        this.valorInvestimento = valorInvestimento;
     }
 
     public Risco getTaxaDeRetorno() {
